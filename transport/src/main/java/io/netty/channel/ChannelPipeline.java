@@ -209,7 +209,7 @@ import java.util.NoSuchElementException;
  * </pre>
  *
  * Be aware that while using {@link DefaultEventLoopGroup} will offload the operation from the {@link EventLoop} it will
- * still process tasks in a serial fashion per {@link ChannelHandlerContext} and so guarantee ordering. Due the ordering
+ * still process tasks in a serial fashion（串行） per {@link ChannelHandlerContext} and so guarantee ordering. Due the ordering
  * it may still become a bottle-neck. If ordering is not a requirement for your use-case you may want to consider using
  * {@link UnorderedThreadPoolEventExecutor} to maximize the parallelism of the task execution.
  *

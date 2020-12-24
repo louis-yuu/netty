@@ -44,7 +44,7 @@ public final class HttpServerCodec extends CombinedChannelDuplexHandler<HttpRequ
      * ({@code maxInitialLineLength (4096}}, {@code maxHeaderSize (8192)}, and
      * {@code maxChunkSize (8192)}).
      */
-    public HttpServerCodec() {
+    public  HttpServerCodec() {
         this(DEFAULT_MAX_INITIAL_LINE_LENGTH, DEFAULT_MAX_HEADER_SIZE, DEFAULT_MAX_CHUNK_SIZE);
     }
 
